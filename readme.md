@@ -1,7 +1,7 @@
+# websocket-ssh-client
 
-websocket-terminal-server
-1.安装websocket-terminal-server
-websocket-terminal-server 简称wsss
+## 1.安装websocket-ssh-server
+websocket-ssh-server 简称wsss
 1.1.安装
 install
 ```
