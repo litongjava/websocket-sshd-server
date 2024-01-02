@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 	"strconv"
-	"websocket-terminal-server/config"
-	views "websocket-terminal-server/controller"
+	"websocket-ssh-server/config"
+	views "websocket-ssh-server/controller"
 
 	"github.com/gin-gonic/gin"
 )
@@ -33,8 +33,8 @@ func main() {
 	server.Use(gin.Recovery())
 	server.Use(JSONAppErrorReporter())
 	server.Use(CORSMiddleware())
-	server.GET("/wsts/ws", views.ShellWs)
-	server.GET("/wsts/socket", views.SshdSocket)
+	server.GET("/wsss/ws", views.ShellWs)
+	server.GET("/wsss/socket", views.SshdSocket)
 	server.Run(host + ":" + port)
 }
 

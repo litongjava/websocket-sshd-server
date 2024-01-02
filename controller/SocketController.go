@@ -2,7 +2,7 @@ package views
 
 import (
 	"log"
-	"websocket-terminal-server/connections"
+	"websocket-ssh-server/connections"
 
 	"github.com/gin-gonic/gin"
 	"github.com/gorilla/websocket"
